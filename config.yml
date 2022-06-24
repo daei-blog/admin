@@ -15,13 +15,24 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - label: "content Type"
+      - label: "Content Type"
         name: "layout"
         widget: "select"
         default: "post"
         options:
          - {label: "Post", value: "post"}
          - {label: "Page", value: "page"}
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        default: "other"
+        options:
+         - {label: "دیگر موارد", value: "other"}
+         - {label: "دست نوشته (یادداشت)", value: "note"}
+         - {label: "اسید (مطالب ظنز و سمی)", value: "acid"}
+         - {label: "وب", value: "web"}
+         - {label: "-- آموزش وردپرس", value: "[web, wordpress]"}
+         - {label: "-- ابزار های وب", value: "[web, tools]"}
       - {label: "Title", name: "title", widget: "string"}
 #      - {label: "Permalink", name: "permalink", widget: "string", default: "{{year}}/{{month}}/{{day}}/{{title}}", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
