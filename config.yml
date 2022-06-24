@@ -2,7 +2,7 @@
 ---
 backend:
   name: github
-  repo: Ghanoos/ghanoos.github.io
+  repo: daei-blog/daei-blog.github.io
   branch: master
   
 
