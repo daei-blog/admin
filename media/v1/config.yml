@@ -2,7 +2,7 @@
 ---
 backend:
   name: github
-  repo: daei-blog/content-vq
+  repo: daei-blog/content-v1
   branch: main
   
 
